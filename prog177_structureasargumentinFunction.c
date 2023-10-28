@@ -1,0 +1,19 @@
+#include <stdio.h>
+struct student
+{
+    char name[30];
+    int age;
+    int class;
+    int roll;
+} st;
+
+void display(char name[], int a, int c, int r)
+{
+    printf("%s,%d,%d,%d", name, a, c, r);
+}
+
+void main()
+{
+    struct student st = {"R", 9, 5, 34};
+    printf("%s,%d,%d,%d", st.name, st.age, st.class, st.roll);
+}
